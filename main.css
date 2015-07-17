@@ -1,13 +1,41 @@
-td{
+body{
+	text-align = center;
+}
+
+.space{
   background-color: red;
-  height: 20px;
-  width: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.title{
+    font-family: Impact;
+    font-size: 50px;
+ }
+
+.font-border{
+	    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .buttons{
-  
+	font-family: Impact;
+	font-size: 20px;
+	height: 50px;
+	width: 100px;
+	color: #868686;
 }
 
-button{
+.newButton{
+	background-color: red;
 
+}
+
+.clearButton{
+	background-color:green;
 }
