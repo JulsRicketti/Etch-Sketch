@@ -58,12 +58,12 @@ td{
 	
 }
 
-.etch-sketch-table{
+.etch-sketch-item{
   background-color: red;
   height: 50px;
   width: 50px;
 }
 
-.etch-sketch-table:hover{
+.etch-sketch-item:hover{
 	  background-color: #880011;
 }
