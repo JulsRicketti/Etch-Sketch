@@ -1,11 +1,18 @@
 body{
-	text-align = center;
+	text-align: center;
+}
+
+div{
+	display: block;
+	text-align: center;
+	margin: auto 0;
+}
+td{
+	background-color: black;
 }
 
 .space{
-  background-color: red;
-  height: 50px;
-  width: 50px;
+
 }
 
 .center {
@@ -17,6 +24,7 @@ body{
 .title{
     font-family: Impact;
     font-size: 50px;
+    text-align: center;
  }
 
 .font-border{
@@ -38,4 +46,10 @@ body{
 
 .clearButton{
 	background-color:green;
+}
+
+.etch-sketch-table{
+  background-color: red;
+  height: 50px;
+  width: 50px;
 }

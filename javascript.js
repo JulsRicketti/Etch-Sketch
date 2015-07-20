@@ -11,15 +11,17 @@ function clearButton(){
 }
 
 function createTable(dimensions){
-	rows = dimensions;
-	columns = dimensions;
-	//figure out where to go from here by looking up dynamic tables on javascript or jquery
+	var content = "<table>"
+	
+	for(var i=0; i<dimensions; i++){
+		content+='<tr>';
+		for (var j=0; j<dimensions; j++){
+	    content += '<td class ="etch-sketch-table"></td>';			
+		}
 
+	    content+='</tr>';
+	}
+	content += "</table>"
+	$('#etch_sketch_table').append(content);
 }
 
-//not going to chose the dimension manually anymore! So just keep this for later
-/*var dimensions = prompt("What size would you like the board to be?",'5');
-if(dimensions==null){
-	dimensions=5; //default value for now is 5
-}
-alert("You have chosen: "+dimensions);*/
