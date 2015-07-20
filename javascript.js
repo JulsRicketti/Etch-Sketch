@@ -11,7 +11,7 @@ function clearButton(){
 }
 
 function createTable(dimensions){
-	var content = "<table>"
+	var content = "<table align='center'>"
 	
 	for(var i=0; i<dimensions; i++){
 		content+='<tr>';

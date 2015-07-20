@@ -44,12 +44,26 @@ td{
 
 }
 
+.newButton:hover{
+	background-color: #880011;
+}
+
+
 .clearButton{
 	background-color:green;
+}
+
+.clearButton:hover{
+	background-color: #116600;
+	
 }
 
 .etch-sketch-table{
   background-color: red;
   height: 50px;
   width: 50px;
+}
+
+.etch-sketch-table:hover{
+	  background-color: #880011;
 }
