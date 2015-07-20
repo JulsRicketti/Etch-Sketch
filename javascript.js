@@ -6,11 +6,12 @@ var dimensions;
 
 $(document).ready(function(){
 	dimensions=10;
+	$(".new-form").hide();
 	createTable(dimensions);
 });
 
 function newButton(){
-	alert("new button has been clicked");
+	$(".new-form").show();
 }
 function clearButton(){
 	$('#etch_sketch_table').remove();
@@ -32,3 +33,6 @@ function createTable(dimensions){
 	$('#table-place-holder').append(content);
 }
 
+function newSubmit(){
+	$(".new-form").hide();
+}
