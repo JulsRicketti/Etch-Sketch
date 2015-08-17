@@ -21,7 +21,8 @@ function clearButton(){
 	createTable(dimensions);
 }
 
-function createTable(dimensions){
+function createTable(dimensionsInput){
+	dimensions = dimensionsInput;
 	var content = "<div id='etch_sketch_table'><table align='center'>"
 	
 	for(var i=0; i<dimensions; i++){
