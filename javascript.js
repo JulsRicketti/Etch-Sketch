@@ -5,20 +5,18 @@
 var dimensions;
 
 $(document).ready(function(){
-	dimensions=10;
+	dimensions=30;
 	$(".new-form").hide();
 	createTable(dimensions);
 
-});
 
-function alertButtonHover(){
-	alert("Hover detected");
-}
+});
 
 function newButton(){
 	$(".new-form").show();
 }
 function clearButton(){
+	$(".new-form").hide();
 	$('#etch_sketch_table').remove();
 	createTable(dimensions);
 }
@@ -36,6 +34,15 @@ function createTable(dimensions){
 	}
 	content += "</table>  </div>"
 	$('#table-place-holder').append(content);
+	
+	changeColor();
+}
+
+function changeColor(){
+		$( "td" ).mouseover(function() {
+		var $this = $(this);
+      	$this.css('background-color', "green");
+	});
 }
 
 function newSubmit(dimensions){
@@ -43,3 +50,6 @@ function newSubmit(dimensions){
 	$('#etch_sketch_table').remove();
 	createTable(dimensions);
 }
+
+//etch-sketch hover
+
